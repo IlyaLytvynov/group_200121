@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Noticia Text';
+  src: url(./assets/fonts/NoticiaText-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noticia Text';
+  src: url(./assets/fonts/NoticiaText-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Noticia Text';
+  src: url(./assets/fonts/NoticiaText-Italic.ttf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noticia Text';
+  src: url(./assets/fonts/NoticiaText-BoldItalic.ttf) format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}

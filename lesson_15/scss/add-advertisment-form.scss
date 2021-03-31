@@ -1,0 +1,19 @@
+.add-advertisment-form {
+  width: 500px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+  &__field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(225, 242, 243);
+    margin-top: 20px;
+    &:focus {
+      border: 1px solid rgb(0, 0, 255);
+    }
+    &:disabled {
+      text-decoration: line-through;
+    }
+  }
+}

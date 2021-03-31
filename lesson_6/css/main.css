@@ -1,0 +1,50 @@
+:root {
+  --hero-image-width: 694px;
+  --hero-image-height: 647px;
+  --hero-image-url: url(../assets/images/iphone_12__d51ddqcc7oqe_large_2x.jpg);
+}
+
+.page-content {
+  margin-top: var(--header-height);
+}
+
+.section_large {
+  height: 750px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+.section__content {
+  width: 100%;
+  max-width: var(--content-max-width);
+  height: 100%;
+}
+
+.hero__image {
+  margin: 50px auto;
+}
+
+.hero__image_iphone-12 {
+  width: var(--hero-image-width);
+  height: var(--hero-image-height);
+  background-image: var(--hero-image-url);
+  background-size: var(--hero-image-width) var(--hero-image-height);
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --hero-image-width: 532px;
+    --hero-image-height: 497px;
+    --hero-image-url: url(../assets/images/iphone_12__d51ddqcc7oqe_medium_2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --hero-image-width: 302px;
+    --hero-image-height: 282px;
+    --hero-image-url: url(../assets/images/iphone_12__d51ddqcc7oqe_small_2x.jpg);
+  }
+}

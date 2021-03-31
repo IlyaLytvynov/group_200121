@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noticia Text', serif;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+body {
+  background: #eae5e5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  padding-top: 85px;
+}
+
+.page-content {
+  padding-top: 85px;
+  padding-bottom: 57px;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.page-header__content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo__title {
+  font-size: 43px;
+  line-height: 43px;
+}
+
+.logo__sub-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.page-nav {
+  display: flex;
+  margin-left: 25px;
+}
+
+.page-nav__link {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-nav__link:last-child {
+  margin-right: 0;
+}
+
+.page-nav__link:hover,
+.page-nav__link_active {
+  color: #61d0d4;
+}
+
+.main-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-wrapper {
+  width: 385px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  padding-left: 36px;
+}
+
+.description__title {
+  font-size: 80px;
+}
+
+.description__subtitle {
+  font-size: 45px;
+}
+
+.portfolio-links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.portfolio-links__link {
+  --size: 150px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  text-align: center;
+  line-height: var(--size);
+  margin-right: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.portfolio-links__link_resume {
+  background-color: #e83556;
+}
+
+.portfolio-links__link_work {
+  background-color: #61d0d4;
+}
+
+.portfolio-links__link_skills {
+  background-color: #d1c926;
+}
+
+.description__text {
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.page-footer {
+  background-color: #e83556;
+  height: 137px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-item__icon {
+  --size: 45px;
+  width: var(--size);
+  height: var(--size);
+  background-color: #61d0d4;
+  border-radius: 50%;
+  margin-right: 16px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <header class="page-header" id="header">
+      <nav class="page-nav">
+        <button class="page-nav__toggle" id="btn">T</button>
+        <ul class="page-nav__menu">
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Mac</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">IPhone</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">IPad</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Watch</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">TV</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Music</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Support</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="grid-parent">
+        <div class="grid-item grid-item-md grid-item-sm-mobile">1</div>
+        <div class="grid-item grid-item-sm grid-item-md-mobile">2</div>
+        <div class="grid-item grid-item-sm grid-item-md-mobile">3</div>
+        <div class="grid-item grid-item-md grid-item-sm-mobile">4</div>
+        <div class="grid-item grid-item-sm grid-item-lg-mobile">5</div>
+        <div class="grid-item grid-item-sm grid-item-sm-mobile">6</div>
+        <div class="grid-item grid-item-sm grid-item-md-mobile">7</div>
+        <div class="grid-item grid-item-lg grid-item-lg-mobile">8</div>
+        <div class="grid-item grid-item-md grid-item-lg-mobile">9</div>
+        <div class="grid-item grid-item-sm grid-item-lg-mobile">10</div>
+      </div>
+    </main>
+    <script>
+      btn.addEventListener('click', () => {
+        header.classList.toggle('page-header_active');
+      });
+    </script>
+  </body>
+</html>

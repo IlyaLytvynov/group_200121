@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  background-color: #74408c;
+}
+
+.sign-in-form {
+  background-color: #ffffff;
+  width: 463px;
+  border-radius: 5px;
+  margin: 0 auto; /*центрирует по горизонтале*/
+  text-align: center; /*выравнивает внутренние элементы по центру*/
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+.row:first-of-type {
+  margin-top: 28px;
+}
+
+.row {
+  margin-top: 44px;
+}
+
+.row:last-of-type {
+  margin-top: 55px;
+}
+
+.form-title {
+  color: #74408c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.control {
+  font-size: 15px;
+  border-radius: 5px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 349px;
+}
+
+.form-field {
+  background-color: #e5e9ed;
+  border: 1px solid #c9c9c9;
+}
+
+.form-field:hover {
+  border: 1px solid green;
+}
+
+.form-field:focus {
+  outline: none;
+  background: #fff;
+  border: 1px solid #b649e8;
+}
+
+.submit {
+  background: #74408c;
+  border: 1px solid #74408c;
+  color: #fff;
+}
+
+.submit:focus {
+  background: #b649e8;
+  border: 1px solid #b649e8;
+}
+
+.submit:active {
+  background: red;
+  border: 1px solid red;
+}

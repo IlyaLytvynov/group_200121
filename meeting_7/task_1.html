@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      info() {
+        return `${this.name} age is ${this.age}`;
+      }
+    }
+
+    // class Person2 {
+    //   constructor(name, age) {
+    //     // Здесь писать ваш код
+    //     this.name = name;
+    //     this.age = age;
+    //     this.info = function(){
+    //         return this.name + 's age is' + this.age;
+    //     }
+    //   }
+    // }
+
+    const john = new Person('john', 34);
+    const kate = new Person('Kate', 18);
+    console.log(john.info()); //'johns age is 34'
+    console.log(kate.info()); //'kate age is 18'
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="lighter">
+    <button class="lighter__light lighter__light_red">1</button>
+    <button class="lighter__light lighter__light_yellow">2</button>
+    <button class="lighter__light lighter__light_green">3</button>
+  </div>
+  <script>
+    const lights = document.querySelectorAll('.lighter__light');
+    let activeLightIndex = 0;
+    const toggleOff = () => {
+      // redLight.classList.remove('active')
+      // yellowLight.classList.remove('active')
+      // greenLight.classList.remove('active')
+      for(let light of lights) {
+        light.classList.remove('active')
+      }
+      // for(let i = 0; i < lights.length; i++) {
+      //   lights[i].classList.remove('active')
+      // }
+    }
+
+    lights.forEach((light) => {
+      light.addEventListener('click', () => {
+        toggleOff()
+        light.classList.add('active')
+      });
+    });
+
+    setInterval(() => {
+      toggleOff()
+      if(activeLightIndex + 1 < lights.length) {
+        activeLightIndex++;
+      } else {
+        activeLightIndex = 0;
+      }
+
+      lights[activeLightIndex].classList.add('active')
+    }, 1000)
+
+    // for (let i = 0; i < lights.length; i++) {
+      // lights[i].addEventListener('click', () => {
+      //   toggleOff()
+      //   lights[i].classList.add('active')
+      // });
+    // }
+
+  </script>
+</body>
+</html>

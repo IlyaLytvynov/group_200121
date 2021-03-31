@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .lamp {
+        border: 1px solid grey;
+        width: 150px;
+        height: 150px;
+      }
+
+      .lamp.active {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="christmas-lights">
+      <div class="light">1</div>
+      <div class="light">2</div>
+      <div class="light active">3</div>
+      <div class="light">4</div>
+    </div>
+    <script>
+      class Light {
+        constructor() {}
+
+        tornOn() {}
+
+        tornOff() {
+
+        }
+
+        render() {}
+      }
+
+      class ChristmassLights {
+        constructor() {
+
+        }
+
+        render() {}
+      }
+
+
+      const t = new ChristmassLight(10)// должно появится 10 ламп которые через 1 секунду будут включаться и выключаться одновременно
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body.logged-in-as-admin{
+      background-color: red;
+    }
+
+    body.logged-in-as-guest{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body id="appBody">
+  <div class="parent" id="test">
+
+  </div> 
+  <script>
+    let userFullName;
+    let i = 0;
+    // do {
+    //   userFullName = prompt('Введите свое полное имя');// admin 
+    //   console.log("userFullName %c" + userFullName, "color: red; font-style: italic; font-size: 18px; background-color: blue; padding: 2px;");
+    //   i++;
+    // } while(userFullName === undefined || userFullName === null || userFullName === '' || userFullName === ' ') 
+    for(;userFullName === undefined || userFullName === null || userFullName === '' || userFullName === ' ';) {
+      userFullName = prompt('Введите свое полное имя');// admin 
+      console.log("userFullName %c" + userFullName, "color: red; font-style: italic; font-size: 18px; background-color: blue; padding: 2px;");
+    }
+    const isAdmin = userFullName === 'admin';
+
+    console.log("Равен админу? %c" + isAdmin, "color: green; font-style: italic; font-size: 18px; background-color: yellow; padding: 2px;");
+
+    if (isAdmin) { // true false
+      alert('Добро пожаловать админ');
+      appBody.classList.add('logged-in-as-admin');
+    } else {
+      alert('Вы не админ! Но все равно добро пожаловать ' + userFullName);
+      appBody.classList.add('logged-in-as-guest')
+    }
+
+  </script>
+</body>
+</html>

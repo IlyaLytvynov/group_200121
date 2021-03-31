@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="page-header" id="header">
+      <nav class="page-nav">
+        <button class="page-nav__toggle" id="btn">T</button>
+        <ul class="page-nav__menu">
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Mac</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">IPhone</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">IPad</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Watch</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">TV</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Music</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">Support</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+      <section class="section section_large hero">
+        <div class="section__content">
+          <figure class="hero__image hero__image_iphone-12"></figure>
+        </div>
+      </section>
+    </main>
+    <script>
+      btn.addEventListener('click', () => {
+        header.classList.toggle('page-header_active');
+      });
+    </script>
+  </body>
+</html>

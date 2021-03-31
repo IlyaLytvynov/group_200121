@@ -1,0 +1,21 @@
+.add-advertisment-form {
+  width: 500px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.add-advertisment-form__field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e1f2f3;
+  margin-top: 20px;
+}
+.add-advertisment-form__field:focus {
+  border: 1px solid blue;
+}
+.add-advertisment-form__field:disabled {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=add-advertisment-form.css.map */

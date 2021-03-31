@@ -1,0 +1,10 @@
+.header {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  &__menu {
+    display: flex;
+    justify-content: baseline;
+    list-style: none;
+  }
+}

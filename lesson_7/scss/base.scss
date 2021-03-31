@@ -1,0 +1,73 @@
+@import './media-mixins.scss';
+
+:root {
+  --body-bg-color: #efefef
+  --content-max-width: 1200px;
+  --header-height: 44px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h3,
+h4,
+ul,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--body-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.grid-parent {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.grid-item {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid red;
+}
+
+$column-width: 33.333%; 
+.grid-item-sm {
+  width: $column-width
+}
+
+.grid-item-md {
+  width: $column-width * 2
+}
+
+.grid-item-lg {
+  width: 100%;
+}
+
+@include mobile {
+  .grid-item-sm-mobile {
+    width: $column-width
+  }
+  .grid-item-md-mobile {
+    width: $column-width * 2
+  }
+  .grid-item-lg-mobile {
+    width: 100%;
+  }
+}
+
+

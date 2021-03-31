@@ -1,0 +1,120 @@
+:root {
+  --nav-link-color: #d1d1d1;
+  --header-bg-color: rgba(0, 0, 0, 0.8);
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  height: var(--header-height);
+  align-items: stretch;
+  background-color: var(--header-bg-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.page-nav {
+  max-width: var(--content-max-width);
+  width: 100%;
+  display: flex;
+}
+
+.page-nav__toggle {
+  --size: 30px;
+  display: none;
+  background: transparent;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  border: none;
+  color: var(--nav-link-color);
+}
+
+.page-nav__menu {
+  width: 100%;
+  display: flex;
+
+  list-style: none;
+  justify-content: center;
+}
+
+.page-nav__item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.page-nav__link {
+  display: flex;
+  align-items: center;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  justify-content: center;
+}
+
+/*PHABLETS SM*/
+@media screen and (max-width: 767px) {
+  .page-nav {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .page-header {
+    transition: all 0.2s;
+    border-bottom: 1px solid;
+  }
+
+  .page-header.page-header_active {
+    --header-bg-color: black;
+    border-bottom: 1px solid var(--nav-link-color);
+  }
+
+  .page-header.page-header_active .page-nav__menu {
+    /* transform: translateX(0); */
+    transform: scaleY(1);
+  }
+
+  .page-nav__menu {
+    position: absolute;
+    top: var(--header-height);
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 45px;
+    /* transform: translateX(-100%); */
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s;
+  }
+
+  .page-nav__link {
+    justify-content: flex-start;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+  .page-nav__item {
+    flex-grow: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--nav-link-color);
+  }
+
+  .page-nav__toggle {
+    display: initial;
+  }
+}
+/* 
+MOBILE XS
+@media screen and (max-width: 574px) {
+  body {
+  }
+} */

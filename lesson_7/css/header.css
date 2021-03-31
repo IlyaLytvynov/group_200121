@@ -1,0 +1,110 @@
+:root {
+  --nav-link-color: #c78989;
+  --header-bg-color: rgba(126, 11, 11, 0.8);
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  height: var(--header-height);
+  align-items: stretch;
+  background-color: var(--header-bg-color);
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .page-header {
+    transition: all 0.2s;
+    border-bottom: 1px solid;
+  }
+  .page-header.page-header_active {
+    --header-bg-color: rgba(246, 4, 4, 0.8);
+    border-bottom: 1px solid var(--nav-link-color);
+  }
+  .page-header.page-header_active .page-nav__menu {
+    transform: translateX(0);
+  }
+}
+
+.page-nav {
+  max-width: var(--content-max-width);
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .page-nav {
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.page-nav__toggle {
+  --size: 30px;
+  display: none;
+  background: transparent;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  border: none;
+  color: var(--nav-link-color);
+}
+@media screen and (max-width: 767px) {
+  .page-nav__toggle {
+    display: initial;
+  }
+}
+.page-nav__menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .page-nav__menu {
+    position: absolute;
+    top: var(--header-height);
+    flex-direction: column;
+    background: var(--header-bg-color);
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 45px;
+    transform: translateX(-100%);
+    transform-origin: top;
+    transition: all 0.3s;
+  }
+}
+.page-nav__item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+@media screen and (max-width: 767px) {
+  .page-nav__item {
+    flex-grow: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--nav-link-color);
+  }
+}
+.page-nav__link {
+  display: flex;
+  align-items: center;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .page-nav__link {
+    justify-content: flex-start;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
